@@ -124,7 +124,7 @@ trap "rm -rf $SDKPKG $SDK_TEMP_FOLDER 2>/dev/null; exit 3" HUP INT QUIT TERM
 # The number of lines in this script (plus 1).  Using this number to
 # calculate the start address of the payload.
 NR_SCRIPT_LINES=@linenum@
-
+echo "number of lines is $NR_SCRIPT_LINES"
 # Run /usr/bin/md5sum on the binary payload to get the MD5 check sum.
 CHKSUM=@md5sum@
 

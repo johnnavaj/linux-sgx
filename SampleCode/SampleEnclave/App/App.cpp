@@ -44,6 +44,7 @@
 
 /* Global EID shared by multiple threads */
 sgx_enclave_id_t global_eid = 0;
+int my_status=0;
 
 typedef struct _sgx_errlist_t {
     sgx_status_t err;
@@ -190,20 +191,39 @@ int SGX_CDECL main(int argc, char *argv[])
         getchar();
         return -1; 
     }
- 
+ecall_myprintf(global_eid,&my_status);
+//debug
+printf ("after initilize enclave\n");
+getchar(); 
     /* Utilize edger8r attributes */
     edger8r_array_attributes();
+printf ("after edgearray\n");
+getchar(); 
     edger8r_pointer_attributes();
+printf ("after  edgepointer\n");
+getchar(); 
     edger8r_type_attributes();
+printf ("after edgetype\n");
+getchar(); 
     edger8r_function_attributes();
+printf ("after edgefunction\n");
+getchar(); 
     
     /* Utilize trusted libraries */
     ecall_libc_functions();
+printf ("after libc-functions\n");
+getchar(); 
     ecall_libcxx_functions();
+printf ("after libcxx\n");
+getchar(); 
     ecall_thread_functions();
+printf ("after thread-functions\n");
+getchar(); 
 
     /* Destroy the enclave */
     sgx_destroy_enclave(global_eid);
+printf ("after destroy\n");
+getchar(); 
     
     printf("Info: SampleEnclave successfully returned.\n");
 

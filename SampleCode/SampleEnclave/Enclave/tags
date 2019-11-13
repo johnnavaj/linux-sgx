@@ -1,0 +1,185 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADD_ASSIGN_OVERFLOW	Enclave_t.c	25;"	d	file:
+CHECK_ENCLAVE_POINTER	Enclave_t.c	20;"	d	file:
+CHECK_REF_POINTER	Enclave_t.c	10;"	d	file:
+CHECK_UNIQUE_POINTER	Enclave_t.c	15;"	d	file:
+ecall_addr	Enclave_t.c	/^	struct {void* ecall_addr; uint8_t is_priv; uint8_t is_switchless;} ecall_table[32];$/;"	m	struct:__anon1::__anon2	file:
+ecall_table	Enclave_t.c	/^	struct {void* ecall_addr; uint8_t is_priv; uint8_t is_switchless;} ecall_table[32];$/;"	m	struct:__anon1	typeref:struct:__anon1::__anon2	file:
+entry_table	Enclave_t.c	/^	uint8_t entry_table[11][32];$/;"	m	struct:__anon3	file:
+g_dyn_entry_table	Enclave_t.c	/^} g_dyn_entry_table = {$/;"	v	typeref:struct:__anon3
+g_ecall_table	Enclave_t.c	/^} g_ecall_table = {$/;"	v	typeref:struct:__anon1
+is_priv	Enclave_t.c	/^	struct {void* ecall_addr; uint8_t is_priv; uint8_t is_switchless;} ecall_table[32];$/;"	m	struct:__anon1::__anon2	file:
+is_switchless	Enclave_t.c	/^	struct {void* ecall_addr; uint8_t is_priv; uint8_t is_switchless;} ecall_table[32];$/;"	m	struct:__anon1::__anon2	file:
+ms_arr	Enclave_t.c	/^	array_t*  ms_arr;$/;"	m	struct:ms_ecall_array_isary_t	file:
+ms_arr	Enclave_t.c	/^	int* ms_arr;$/;"	m	struct:ms_ecall_array_in_out_t	file:
+ms_arr	Enclave_t.c	/^	int* ms_arr;$/;"	m	struct:ms_ecall_array_in_t	file:
+ms_arr	Enclave_t.c	/^	int* ms_arr;$/;"	m	struct:ms_ecall_array_out_t	file:
+ms_arr	Enclave_t.c	/^	int* ms_arr;$/;"	m	struct:ms_ecall_array_user_check_t	file:
+ms_arr	Enclave_t.c	/^	int* ms_arr;$/;"	m	struct:ms_ecall_pointer_count_t	file:
+ms_buf	Enclave_t.c	/^	buffer_t ms_buf;$/;"	m	struct:ms_ecall_pointer_isptr_readonly_t	file:
+ms_cnt	Enclave_t.c	/^	size_t ms_cnt;$/;"	m	struct:ms_ecall_pointer_count_t	file:
+ms_cpuinfo	Enclave_t.c	/^	int* ms_cpuinfo;$/;"	m	struct:ms_ecall_sgx_cpuid_t	file:
+ms_cpuinfo	Enclave_t.c	/^	int* ms_cpuinfo;$/;"	m	struct:ms_sgx_oc_cpuidex_t	file:
+ms_ecall_array_in_out_t	Enclave_t.c	/^typedef struct ms_ecall_array_in_out_t {$/;"	s	file:
+ms_ecall_array_in_out_t	Enclave_t.c	/^} ms_ecall_array_in_out_t;$/;"	t	typeref:struct:ms_ecall_array_in_out_t	file:
+ms_ecall_array_in_t	Enclave_t.c	/^typedef struct ms_ecall_array_in_t {$/;"	s	file:
+ms_ecall_array_in_t	Enclave_t.c	/^} ms_ecall_array_in_t;$/;"	t	typeref:struct:ms_ecall_array_in_t	file:
+ms_ecall_array_isary_t	Enclave_t.c	/^typedef struct ms_ecall_array_isary_t {$/;"	s	file:
+ms_ecall_array_isary_t	Enclave_t.c	/^} ms_ecall_array_isary_t;$/;"	t	typeref:struct:ms_ecall_array_isary_t	file:
+ms_ecall_array_out_t	Enclave_t.c	/^typedef struct ms_ecall_array_out_t {$/;"	s	file:
+ms_ecall_array_out_t	Enclave_t.c	/^} ms_ecall_array_out_t;$/;"	t	typeref:struct:ms_ecall_array_out_t	file:
+ms_ecall_array_user_check_t	Enclave_t.c	/^typedef struct ms_ecall_array_user_check_t {$/;"	s	file:
+ms_ecall_array_user_check_t	Enclave_t.c	/^} ms_ecall_array_user_check_t;$/;"	t	typeref:struct:ms_ecall_array_user_check_t	file:
+ms_ecall_function_private_t	Enclave_t.c	/^typedef struct ms_ecall_function_private_t {$/;"	s	file:
+ms_ecall_function_private_t	Enclave_t.c	/^} ms_ecall_function_private_t;$/;"	t	typeref:struct:ms_ecall_function_private_t	file:
+ms_ecall_increase_counter_t	Enclave_t.c	/^typedef struct ms_ecall_increase_counter_t {$/;"	s	file:
+ms_ecall_increase_counter_t	Enclave_t.c	/^} ms_ecall_increase_counter_t;$/;"	t	typeref:struct:ms_ecall_increase_counter_t	file:
+ms_ecall_pointer_count_t	Enclave_t.c	/^typedef struct ms_ecall_pointer_count_t {$/;"	s	file:
+ms_ecall_pointer_count_t	Enclave_t.c	/^} ms_ecall_pointer_count_t;$/;"	t	typeref:struct:ms_ecall_pointer_count_t	file:
+ms_ecall_pointer_in_out_t	Enclave_t.c	/^typedef struct ms_ecall_pointer_in_out_t {$/;"	s	file:
+ms_ecall_pointer_in_out_t	Enclave_t.c	/^} ms_ecall_pointer_in_out_t;$/;"	t	typeref:struct:ms_ecall_pointer_in_out_t	file:
+ms_ecall_pointer_in_t	Enclave_t.c	/^typedef struct ms_ecall_pointer_in_t {$/;"	s	file:
+ms_ecall_pointer_in_t	Enclave_t.c	/^} ms_ecall_pointer_in_t;$/;"	t	typeref:struct:ms_ecall_pointer_in_t	file:
+ms_ecall_pointer_isptr_readonly_t	Enclave_t.c	/^typedef struct ms_ecall_pointer_isptr_readonly_t {$/;"	s	file:
+ms_ecall_pointer_isptr_readonly_t	Enclave_t.c	/^} ms_ecall_pointer_isptr_readonly_t;$/;"	t	typeref:struct:ms_ecall_pointer_isptr_readonly_t	file:
+ms_ecall_pointer_out_t	Enclave_t.c	/^typedef struct ms_ecall_pointer_out_t {$/;"	s	file:
+ms_ecall_pointer_out_t	Enclave_t.c	/^} ms_ecall_pointer_out_t;$/;"	t	typeref:struct:ms_ecall_pointer_out_t	file:
+ms_ecall_pointer_size_t	Enclave_t.c	/^typedef struct ms_ecall_pointer_size_t {$/;"	s	file:
+ms_ecall_pointer_size_t	Enclave_t.c	/^} ms_ecall_pointer_size_t;$/;"	t	typeref:struct:ms_ecall_pointer_size_t	file:
+ms_ecall_pointer_string_const_t	Enclave_t.c	/^typedef struct ms_ecall_pointer_string_const_t {$/;"	s	file:
+ms_ecall_pointer_string_const_t	Enclave_t.c	/^} ms_ecall_pointer_string_const_t;$/;"	t	typeref:struct:ms_ecall_pointer_string_const_t	file:
+ms_ecall_pointer_string_t	Enclave_t.c	/^typedef struct ms_ecall_pointer_string_t {$/;"	s	file:
+ms_ecall_pointer_string_t	Enclave_t.c	/^} ms_ecall_pointer_string_t;$/;"	t	typeref:struct:ms_ecall_pointer_string_t	file:
+ms_ecall_pointer_user_check_t	Enclave_t.c	/^typedef struct ms_ecall_pointer_user_check_t {$/;"	s	file:
+ms_ecall_pointer_user_check_t	Enclave_t.c	/^} ms_ecall_pointer_user_check_t;$/;"	t	typeref:struct:ms_ecall_pointer_user_check_t	file:
+ms_ecall_sgx_cpuid_t	Enclave_t.c	/^typedef struct ms_ecall_sgx_cpuid_t {$/;"	s	file:
+ms_ecall_sgx_cpuid_t	Enclave_t.c	/^} ms_ecall_sgx_cpuid_t;$/;"	t	typeref:struct:ms_ecall_sgx_cpuid_t	file:
+ms_ecall_type_char_t	Enclave_t.c	/^typedef struct ms_ecall_type_char_t {$/;"	s	file:
+ms_ecall_type_char_t	Enclave_t.c	/^} ms_ecall_type_char_t;$/;"	t	typeref:struct:ms_ecall_type_char_t	file:
+ms_ecall_type_double_t	Enclave_t.c	/^typedef struct ms_ecall_type_double_t {$/;"	s	file:
+ms_ecall_type_double_t	Enclave_t.c	/^} ms_ecall_type_double_t;$/;"	t	typeref:struct:ms_ecall_type_double_t	file:
+ms_ecall_type_enum_union_t	Enclave_t.c	/^typedef struct ms_ecall_type_enum_union_t {$/;"	s	file:
+ms_ecall_type_enum_union_t	Enclave_t.c	/^} ms_ecall_type_enum_union_t;$/;"	t	typeref:struct:ms_ecall_type_enum_union_t	file:
+ms_ecall_type_float_t	Enclave_t.c	/^typedef struct ms_ecall_type_float_t {$/;"	s	file:
+ms_ecall_type_float_t	Enclave_t.c	/^} ms_ecall_type_float_t;$/;"	t	typeref:struct:ms_ecall_type_float_t	file:
+ms_ecall_type_int_t	Enclave_t.c	/^typedef struct ms_ecall_type_int_t {$/;"	s	file:
+ms_ecall_type_int_t	Enclave_t.c	/^} ms_ecall_type_int_t;$/;"	t	typeref:struct:ms_ecall_type_int_t	file:
+ms_ecall_type_size_t_t	Enclave_t.c	/^typedef struct ms_ecall_type_size_t_t {$/;"	s	file:
+ms_ecall_type_size_t_t	Enclave_t.c	/^} ms_ecall_type_size_t_t;$/;"	t	typeref:struct:ms_ecall_type_size_t_t	file:
+ms_ecall_type_struct_t	Enclave_t.c	/^typedef struct ms_ecall_type_struct_t {$/;"	s	file:
+ms_ecall_type_struct_t	Enclave_t.c	/^} ms_ecall_type_struct_t;$/;"	t	typeref:struct:ms_ecall_type_struct_t	file:
+ms_ecall_type_wchar_t_t	Enclave_t.c	/^typedef struct ms_ecall_type_wchar_t_t {$/;"	s	file:
+ms_ecall_type_wchar_t_t	Enclave_t.c	/^} ms_ecall_type_wchar_t_t;$/;"	t	typeref:struct:ms_ecall_type_wchar_t_t	file:
+ms_leaf	Enclave_t.c	/^	int ms_leaf;$/;"	m	struct:ms_ecall_sgx_cpuid_t	file:
+ms_leaf	Enclave_t.c	/^	int ms_leaf;$/;"	m	struct:ms_sgx_oc_cpuidex_t	file:
+ms_len	Enclave_t.c	/^	size_t ms_len;$/;"	m	struct:ms_ecall_pointer_isptr_readonly_t	file:
+ms_len	Enclave_t.c	/^	size_t ms_len;$/;"	m	struct:ms_ecall_pointer_size_t	file:
+ms_ocall_pointer_in_out_t	Enclave_t.c	/^typedef struct ms_ocall_pointer_in_out_t {$/;"	s	file:
+ms_ocall_pointer_in_out_t	Enclave_t.c	/^} ms_ocall_pointer_in_out_t;$/;"	t	typeref:struct:ms_ocall_pointer_in_out_t	file:
+ms_ocall_pointer_in_t	Enclave_t.c	/^typedef struct ms_ocall_pointer_in_t {$/;"	s	file:
+ms_ocall_pointer_in_t	Enclave_t.c	/^} ms_ocall_pointer_in_t;$/;"	t	typeref:struct:ms_ocall_pointer_in_t	file:
+ms_ocall_pointer_out_t	Enclave_t.c	/^typedef struct ms_ocall_pointer_out_t {$/;"	s	file:
+ms_ocall_pointer_out_t	Enclave_t.c	/^} ms_ocall_pointer_out_t;$/;"	t	typeref:struct:ms_ocall_pointer_out_t	file:
+ms_ocall_pointer_user_check_t	Enclave_t.c	/^typedef struct ms_ocall_pointer_user_check_t {$/;"	s	file:
+ms_ocall_pointer_user_check_t	Enclave_t.c	/^} ms_ocall_pointer_user_check_t;$/;"	t	typeref:struct:ms_ocall_pointer_user_check_t	file:
+ms_ocall_print_string_t	Enclave_t.c	/^typedef struct ms_ocall_print_string_t {$/;"	s	file:
+ms_ocall_print_string_t	Enclave_t.c	/^} ms_ocall_print_string_t;$/;"	t	typeref:struct:ms_ocall_print_string_t	file:
+ms_ptr	Enclave_t.c	/^	void* ms_ptr;$/;"	m	struct:ms_ecall_pointer_size_t	file:
+ms_retval	Enclave_t.c	/^	int ms_retval;$/;"	m	struct:ms_ecall_function_private_t	file:
+ms_retval	Enclave_t.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_retval	Enclave_t.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_set_untrusted_event_ocall_t	file:
+ms_retval	Enclave_t.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_retval	Enclave_t.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_wait_untrusted_event_ocall_t	file:
+ms_retval	Enclave_t.c	/^	size_t ms_retval;$/;"	m	struct:ms_ecall_increase_counter_t	file:
+ms_retval	Enclave_t.c	/^	size_t ms_retval;$/;"	m	struct:ms_ecall_pointer_user_check_t	file:
+ms_self	Enclave_t.c	/^	const void* ms_self;$/;"	m	struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_self	Enclave_t.c	/^	const void* ms_self;$/;"	m	struct:ms_sgx_thread_wait_untrusted_event_ocall_t	file:
+ms_sgx_oc_cpuidex_t	Enclave_t.c	/^typedef struct ms_sgx_oc_cpuidex_t {$/;"	s	file:
+ms_sgx_oc_cpuidex_t	Enclave_t.c	/^} ms_sgx_oc_cpuidex_t;$/;"	t	typeref:struct:ms_sgx_oc_cpuidex_t	file:
+ms_sgx_thread_set_multiple_untrusted_events_ocall_t	Enclave_t.c	/^typedef struct ms_sgx_thread_set_multiple_untrusted_events_ocall_t {$/;"	s	file:
+ms_sgx_thread_set_multiple_untrusted_events_ocall_t	Enclave_t.c	/^} ms_sgx_thread_set_multiple_untrusted_events_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_sgx_thread_set_untrusted_event_ocall_t	Enclave_t.c	/^typedef struct ms_sgx_thread_set_untrusted_event_ocall_t {$/;"	s	file:
+ms_sgx_thread_set_untrusted_event_ocall_t	Enclave_t.c	/^} ms_sgx_thread_set_untrusted_event_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_set_untrusted_event_ocall_t	file:
+ms_sgx_thread_setwait_untrusted_events_ocall_t	Enclave_t.c	/^typedef struct ms_sgx_thread_setwait_untrusted_events_ocall_t {$/;"	s	file:
+ms_sgx_thread_setwait_untrusted_events_ocall_t	Enclave_t.c	/^} ms_sgx_thread_setwait_untrusted_events_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_sgx_thread_wait_untrusted_event_ocall_t	Enclave_t.c	/^typedef struct ms_sgx_thread_wait_untrusted_event_ocall_t {$/;"	s	file:
+ms_sgx_thread_wait_untrusted_event_ocall_t	Enclave_t.c	/^} ms_sgx_thread_wait_untrusted_event_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_wait_untrusted_event_ocall_t	file:
+ms_str	Enclave_t.c	/^	char* ms_str;$/;"	m	struct:ms_ecall_pointer_string_t	file:
+ms_str	Enclave_t.c	/^	const char* ms_str;$/;"	m	struct:ms_ecall_pointer_string_const_t	file:
+ms_str	Enclave_t.c	/^	const char* ms_str;$/;"	m	struct:ms_ocall_print_string_t	file:
+ms_str_len	Enclave_t.c	/^	size_t ms_str_len;$/;"	m	struct:ms_ecall_pointer_string_const_t	file:
+ms_str_len	Enclave_t.c	/^	size_t ms_str_len;$/;"	m	struct:ms_ecall_pointer_string_t	file:
+ms_subleaf	Enclave_t.c	/^	int ms_subleaf;$/;"	m	struct:ms_sgx_oc_cpuidex_t	file:
+ms_sz	Enclave_t.c	/^	size_t ms_sz;$/;"	m	struct:ms_ecall_pointer_user_check_t	file:
+ms_total	Enclave_t.c	/^	size_t ms_total;$/;"	m	struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_val	Enclave_t.c	/^	char ms_val;$/;"	m	struct:ms_ecall_type_char_t	file:
+ms_val	Enclave_t.c	/^	double ms_val;$/;"	m	struct:ms_ecall_type_double_t	file:
+ms_val	Enclave_t.c	/^	float ms_val;$/;"	m	struct:ms_ecall_type_float_t	file:
+ms_val	Enclave_t.c	/^	int ms_val;$/;"	m	struct:ms_ecall_type_int_t	file:
+ms_val	Enclave_t.c	/^	int* ms_val;$/;"	m	struct:ms_ecall_pointer_in_out_t	file:
+ms_val	Enclave_t.c	/^	int* ms_val;$/;"	m	struct:ms_ecall_pointer_in_t	file:
+ms_val	Enclave_t.c	/^	int* ms_val;$/;"	m	struct:ms_ecall_pointer_out_t	file:
+ms_val	Enclave_t.c	/^	int* ms_val;$/;"	m	struct:ms_ocall_pointer_in_out_t	file:
+ms_val	Enclave_t.c	/^	int* ms_val;$/;"	m	struct:ms_ocall_pointer_in_t	file:
+ms_val	Enclave_t.c	/^	int* ms_val;$/;"	m	struct:ms_ocall_pointer_out_t	file:
+ms_val	Enclave_t.c	/^	int* ms_val;$/;"	m	struct:ms_ocall_pointer_user_check_t	file:
+ms_val	Enclave_t.c	/^	size_t ms_val;$/;"	m	struct:ms_ecall_type_size_t_t	file:
+ms_val	Enclave_t.c	/^	struct struct_foo_t ms_val;$/;"	m	struct:ms_ecall_type_struct_t	typeref:struct:ms_ecall_type_struct_t::struct_foo_t	file:
+ms_val	Enclave_t.c	/^	void* ms_val;$/;"	m	struct:ms_ecall_pointer_user_check_t	file:
+ms_val	Enclave_t.c	/^	wchar_t ms_val;$/;"	m	struct:ms_ecall_type_wchar_t_t	file:
+ms_val1	Enclave_t.c	/^	enum enum_foo_t ms_val1;$/;"	m	struct:ms_ecall_type_enum_union_t	typeref:enum:ms_ecall_type_enum_union_t::enum_foo_t	file:
+ms_val2	Enclave_t.c	/^	union union_foo_t* ms_val2;$/;"	m	struct:ms_ecall_type_enum_union_t	typeref:union:ms_ecall_type_enum_union_t::union_foo_t	file:
+ms_waiter	Enclave_t.c	/^	const void* ms_waiter;$/;"	m	struct:ms_sgx_thread_set_untrusted_event_ocall_t	file:
+ms_waiter	Enclave_t.c	/^	const void* ms_waiter;$/;"	m	struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_waiters	Enclave_t.c	/^	const void** ms_waiters;$/;"	m	struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+nr_ecall	Enclave_t.c	/^	size_t nr_ecall;$/;"	m	struct:__anon1	file:
+nr_ocall	Enclave_t.c	/^	size_t nr_ocall;$/;"	m	struct:__anon3	file:
+ocall_function_allow	Enclave_t.c	/^sgx_status_t SGX_CDECL ocall_function_allow(void)$/;"	f
+ocall_pointer_in	Enclave_t.c	/^sgx_status_t SGX_CDECL ocall_pointer_in(int* val)$/;"	f
+ocall_pointer_in_out	Enclave_t.c	/^sgx_status_t SGX_CDECL ocall_pointer_in_out(int* val)$/;"	f
+ocall_pointer_out	Enclave_t.c	/^sgx_status_t SGX_CDECL ocall_pointer_out(int* val)$/;"	f
+ocall_pointer_user_check	Enclave_t.c	/^sgx_status_t SGX_CDECL ocall_pointer_user_check(int* val)$/;"	f
+ocall_print_string	Enclave_t.c	/^sgx_status_t SGX_CDECL ocall_print_string(const char* str)$/;"	f
+printf	Enclave.cpp	/^int printf(const char* fmt, ...)$/;"	f
+sgx_ecall_array_in	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_array_in(void* pms)$/;"	f	file:
+sgx_ecall_array_in_out	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_array_in_out(void* pms)$/;"	f	file:
+sgx_ecall_array_isary	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_array_isary(void* pms)$/;"	f	file:
+sgx_ecall_array_out	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_array_out(void* pms)$/;"	f	file:
+sgx_ecall_array_user_check	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_array_user_check(void* pms)$/;"	f	file:
+sgx_ecall_consumer	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_consumer(void* pms)$/;"	f	file:
+sgx_ecall_exception	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_exception(void* pms)$/;"	f	file:
+sgx_ecall_function_private	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_function_private(void* pms)$/;"	f	file:
+sgx_ecall_function_public	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_function_public(void* pms)$/;"	f	file:
+sgx_ecall_increase_counter	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_increase_counter(void* pms)$/;"	f	file:
+sgx_ecall_malloc_free	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_malloc_free(void* pms)$/;"	f	file:
+sgx_ecall_map	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_map(void* pms)$/;"	f	file:
+sgx_ecall_pointer_count	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_pointer_count(void* pms)$/;"	f	file:
+sgx_ecall_pointer_in	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_pointer_in(void* pms)$/;"	f	file:
+sgx_ecall_pointer_in_out	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_pointer_in_out(void* pms)$/;"	f	file:
+sgx_ecall_pointer_isptr_readonly	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_pointer_isptr_readonly(void* pms)$/;"	f	file:
+sgx_ecall_pointer_out	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_pointer_out(void* pms)$/;"	f	file:
+sgx_ecall_pointer_size	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_pointer_size(void* pms)$/;"	f	file:
+sgx_ecall_pointer_string	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_pointer_string(void* pms)$/;"	f	file:
+sgx_ecall_pointer_string_const	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_pointer_string_const(void* pms)$/;"	f	file:
+sgx_ecall_pointer_user_check	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_pointer_user_check(void* pms)$/;"	f	file:
+sgx_ecall_producer	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_producer(void* pms)$/;"	f	file:
+sgx_ecall_sgx_cpuid	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_sgx_cpuid(void* pms)$/;"	f	file:
+sgx_ecall_type_char	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_type_char(void* pms)$/;"	f	file:
+sgx_ecall_type_double	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_type_double(void* pms)$/;"	f	file:
+sgx_ecall_type_enum_union	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_type_enum_union(void* pms)$/;"	f	file:
+sgx_ecall_type_float	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_type_float(void* pms)$/;"	f	file:
+sgx_ecall_type_int	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_type_int(void* pms)$/;"	f	file:
+sgx_ecall_type_size_t	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_type_size_t(void* pms)$/;"	f	file:
+sgx_ecall_type_struct	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_type_struct(void* pms)$/;"	f	file:
+sgx_ecall_type_wchar_t	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ecall_type_wchar_t(void* pms)$/;"	f	file:
+sgx_oc_cpuidex	Enclave_t.c	/^sgx_status_t SGX_CDECL sgx_oc_cpuidex(int cpuinfo[4], int leaf, int subleaf)$/;"	f
+sgx_ocall_pointer_attr	Enclave_t.c	/^static sgx_status_t SGX_CDECL sgx_ocall_pointer_attr(void* pms)$/;"	f	file:
+sgx_thread_set_multiple_untrusted_events_ocall	Enclave_t.c	/^sgx_status_t SGX_CDECL sgx_thread_set_multiple_untrusted_events_ocall(int* retval, const void** waiters, size_t total)$/;"	f
+sgx_thread_set_untrusted_event_ocall	Enclave_t.c	/^sgx_status_t SGX_CDECL sgx_thread_set_untrusted_event_ocall(int* retval, const void* waiter)$/;"	f
+sgx_thread_setwait_untrusted_events_ocall	Enclave_t.c	/^sgx_status_t SGX_CDECL sgx_thread_setwait_untrusted_events_ocall(int* retval, const void* waiter, const void* self)$/;"	f
+sgx_thread_wait_untrusted_event_ocall	Enclave_t.c	/^sgx_status_t SGX_CDECL sgx_thread_wait_untrusted_event_ocall(int* retval, const void* self)$/;"	f

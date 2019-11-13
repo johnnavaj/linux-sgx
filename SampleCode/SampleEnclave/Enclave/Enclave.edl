@@ -55,6 +55,10 @@ enclave {
      *  [in]: copy the string buffer to App outside.
      *  [string]: specifies 'str' is a NULL terminated buffer.
      */
+    /* added ny john jacob for testing */
+    trusted {
+	int ecall_myprintf();
+    };
     untrusted {
         void ocall_print_string([in, string] const char *str);
     };

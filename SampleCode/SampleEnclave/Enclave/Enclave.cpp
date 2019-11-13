@@ -46,6 +46,15 @@ int printf(const char* fmt, ...)
     va_start(ap, fmt);
     vsnprintf(buf, BUFSIZ, fmt, ap);
     va_end(ap);
-    ocall_print_string(buf);
+    //ocall_print_string(buf);
+    ocall_print_string("\nmy name is john\n");
+
     return (int)strnlen(buf, BUFSIZ - 1) + 1;
 }
+int  ecall_myprintf()
+{
+    ocall_print_string("my name is biju\n");
+	return 14;
+}
+
+
