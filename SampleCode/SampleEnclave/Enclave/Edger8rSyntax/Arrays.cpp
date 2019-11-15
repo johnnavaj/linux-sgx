@@ -34,6 +34,7 @@
 #include "sgx_trts.h"
 #include "../Enclave.h"
 #include "Enclave_t.h"
+#include "password.h"
 
 /* ecall_array_user_check:
  *   [user_check] parameter does not perfrom copy operations.
@@ -42,13 +43,38 @@ void ecall_array_user_check(int arr[4])
 {
     if (sgx_is_outside_enclave(arr, 4 * sizeof(int)) != 1)
         abort();
-    
+//john
+ocall_print_string("\n inside enclave arrat user....by Biju\n");
     for (int i = 0; i < 4; i++) {
         assert(arr[i] == i);
         arr[i] = 3 - i;
     }
 }
+//john trying a sample function here..
 
+int strcmp(char *s, char *t) /* K&R way.. copied here by John */
+{
+  for(;*s == *t; s++, t++)
+    if(*s == '\0')
+      return 0;
+  return *s - *t;
+}
+void ecall_array_newfunction(char name[20], char password[20])
+{
+int index;
+ocall_print_string("\n John inside the new function in enclave \n");
+	for(index=0;index<3;index++){
+		if (!strcmp(name,NameArray[index])){
+			ocall_print_string("Found a name which matches \n");
+			break;
+		}
+	}
+	if (!strcmp(password,PassArray[index]))
+		ocall_print_string("Password Authenticated \n");
+	else
+		ocall_print_string("Authentication failed\n");
+
+}
 /* ecall_array_in:
  *   arr[] is copied to trusted domain, but modified 
  *   results will not be reflected to the untrusted side.

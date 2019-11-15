@@ -45,6 +45,8 @@ void edger8r_array_attributes(void)
     ret = ecall_array_user_check(global_eid, arr1);
     if (ret != SGX_SUCCESS)
         abort();
+//john
+    //ecall_array_newfunction(global_eid,arr1);
 
     /* make sure arr1 is changed */
     for (int i = 0; i < 4; i++)

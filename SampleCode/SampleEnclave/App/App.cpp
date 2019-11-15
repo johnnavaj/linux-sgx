@@ -183,7 +183,8 @@ int SGX_CDECL main(int argc, char *argv[])
 {
     (void)(argc);
     (void)(argv);
-
+char Name[20]="";
+char Password[20]="";
 
     /* Initialize the enclave */
     if(initialize_enclave() < 0){
@@ -191,37 +192,29 @@ int SGX_CDECL main(int argc, char *argv[])
         getchar();
         return -1; 
     }
-ecall_myprintf(global_eid,&my_status);
-//debug
-printf ("after initilize enclave\n");
-getchar(); 
-    /* Utilize edger8r attributes */
-    edger8r_array_attributes();
-printf ("after edgearray\n");
-getchar(); 
-    edger8r_pointer_attributes();
-printf ("after  edgepointer\n");
-getchar(); 
-    edger8r_type_attributes();
-printf ("after edgetype\n");
-getchar(); 
-    edger8r_function_attributes();
-printf ("after edgefunction\n");
-getchar(); 
-    
-    /* Utilize trusted libraries */
-    ecall_libc_functions();
-printf ("after libc-functions\n");
-getchar(); 
-    ecall_libcxx_functions();
-printf ("after libcxx\n");
-getchar(); 
-    ecall_thread_functions();
-printf ("after thread-functions\n");
-getchar(); 
+//ecall_myprintf(global_eid,&my_status);
+printf("\n The following function demonstrates authentication inside Enclave\n");
+printf ("\n Enter user name \n");
+gets(Name);
+printf("\ Enter Password \n");
+gets(Password);
 
-    /* Destroy the enclave */
+ecall_array_newfunction(global_eid,Name,Password);
+/*
+     Utilize edger8r attributes 
+    edger8r_array_attributes();
+    edger8r_pointer_attributes();
+    edger8r_type_attributes();
+    edger8r_function_attributes();
+    
+     Utilize trusted libraries 
+    ecall_libc_functions();
+    ecall_libcxx_functions();
+    ecall_thread_functions();
+
+     Destroy the enclave 
     sgx_destroy_enclave(global_eid);
+*/
 printf ("after destroy\n");
 getchar(); 
     

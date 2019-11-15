@@ -47,6 +47,7 @@ enclave {
          *      is not copied into the enclave either. But enclave can modify the memory outside.
          */
         
+        public void ecall_array_newfunction([in] char Name[20],[in] char Password[20]);
         public void ecall_array_user_check([user_check] int arr[4]);
         
         /*
