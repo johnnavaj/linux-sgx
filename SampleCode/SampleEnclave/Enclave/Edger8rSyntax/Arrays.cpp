@@ -61,15 +61,16 @@ int strcmp(char *s, char *t) /* K&R way.. copied here by John */
 }
 void ecall_array_newfunction(char name[20], char password[20])
 {
-int index;
+int index,status=0;
 ocall_print_string("\n John inside the new function in enclave \n");
 	for(index=0;index<3;index++){
 		if (!strcmp(name,NameArray[index])){
 			ocall_print_string("Found a name which matches \n");
+			status = 1;
 			break;
 		}
 	}
-	if (!strcmp(password,PassArray[index]))
+	if (!strcmp(password,PassArray[index]) && (status ==1))
 		ocall_print_string("Password Authenticated \n");
 	else
 		ocall_print_string("Authentication failed\n");
